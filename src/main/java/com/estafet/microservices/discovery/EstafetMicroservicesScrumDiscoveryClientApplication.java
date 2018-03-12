@@ -22,7 +22,7 @@ public class EstafetMicroservicesScrumDiscoveryClientApplication extends SpringB
 	public String healthCheck() {
 		System.out.println(discoveryClient.getServices());
 		
-		return "";
+		return "zdr";
 	}
 	
 	
