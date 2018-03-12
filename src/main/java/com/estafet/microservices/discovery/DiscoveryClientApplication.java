@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @ComponentScan
 @EnableAutoConfiguration
 @RestController
-public class EstafetMicroservicesScrumDiscoveryClientApplication extends SpringBootServletInitializer {
+public class DiscoveryClientApplication extends SpringBootServletInitializer {
 
 	@Autowired
 	private DiscoveryClient discoveryClient;
@@ -26,11 +26,11 @@ public class EstafetMicroservicesScrumDiscoveryClientApplication extends SpringB
 	public String healthCheck() {
 		System.out.println(discoveryClient.getServices());
 		
-		return "zdr";
+		return "";
 	}
 	
 	
 	public static void main(String[] args) {
-		SpringApplication.run(EstafetMicroservicesScrumDiscoveryClientApplication.class, args);
+		SpringApplication.run(DiscoveryClientApplication.class, args);
 	}
 }
