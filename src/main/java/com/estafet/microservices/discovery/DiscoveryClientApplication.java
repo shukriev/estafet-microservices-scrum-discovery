@@ -25,7 +25,7 @@ public class DiscoveryClientApplication extends SpringBootServletInitializer {
 	@RequestMapping(name = "/project", method = RequestMethod.GET)
 	public String healthCheck() {
 		System.out.println(discoveryClient.getServices());
-		
+		System.out.println(discoveryClient.getClass());
 		return "";
 	}
 	
